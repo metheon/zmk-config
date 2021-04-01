@@ -7,24 +7,70 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
+#define NONE____ &none
+#define KP_ESC__ &kp ESC
+#define KP_TAB__ &kp TAB
+#define KP_LSHFT &kp LSHFT
+
+#define KP_A____ &kp A
+#define KP_B____ &kp B
+#define KP_C____ &kp C
+#define KP_D____ &kp D
+#define KP_E____ &kp E
+#define KP_F____ &kp F
+#define KP_G____ &kp G
+#define KP_H____ &kp H
+#define KP_I____ &kp I
+#define KP_J____ &kp J
+#define KP_K____ &kp K
+#define KP_L____ &kp L
+#define KP_M____ &kp M
+#define KP_N____ &kp N
+#define KP_O____ &kp O
+#define KP_P____ &kp P
+#define KP_Q____ &kp Q
+#define KP_R____ &kp R
+#define KP_S____ &kp S
+#define KP_T____ &kp T
+#define KP_U____ &kp U
+#define KP_V____ &kp V
+#define KP_W____ &kp W
+#define KP_X____ &kp X
+#define KP_Y____ &kp Y
+#define KP_Z____ &kp Z
+
+#define KP_SQT__ &kp SQT
+
 / {
 	keymap {
 		compatible = "zmk,keymap";
 
 		default_layer {
-// ---------------------------------------------------------------------------------------------------------------------------------
-// |  ESC  |  Q  |  W  |  E   |  R   |  T   |                                          |  Y   |  U    |  I    |  O   |   P   |   \  |
-// |  TAB  |  A  |  S  |  D   |  F   |  G   |                                          |  H   |  J    |  K    |  L   |   ;   |   '  |
-// | SHIFT |  Z  |  X  |  C   |  V   |  B   | L SHIFT | L SHIFT |  | L SHIFT | L SHIFT |  N   |  M    |  ,    |  .   |   /   | CTRL |
-//                     | GUI  | DEL  | RET  |  SPACE  |   ESC   |  |   RET   |  SPACE  | TAB  | BSPC  | R-ALT |
 			bindings = <
-	&kp ESC   &kp Q &kp W &kp E &kp R &kp T                                                &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSLH
-	&kp TAB   &kp A &kp S &kp D &kp F &kp G                                                &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-	&kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp LSHFT &kp LSHFT        &kp LSHFT &kp LSHFT &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RCTRL
-	                 &kp LGUI &kp DEL &kp RET &kp SPACE &kp ESC        &kp RET  &kp SPACE  &kp TAB &kp BSPC &kp RALT
-			>;
 
+// .--------+--------+--------+--------+--------+--------.                                      .--------+--------+--------+--------+--------+--------.
+    NONE____ KP_Q____ KP_W____ KP_F____ KP_P____ KP_B____                                        KP_J____ KP_L____ KP_U____ KP_Y____ KP_SQT__ NONE____ 
+// |--------+--------+--------+--------+--------+--------|                                      |--------+--------+--------+--------+--------+--------|
+    NONE____ KP_Q____ KP_W____ KP_F____ KP_P____ KP_B____                                        KP_J____ KP_L____ KP_U____ KP_Y____ KP_SQT__ NONE____ 
+// |--------+--------+--------+--------+--------+--------+--------+--------.  .--------+--------+--------+--------+--------+--------+--------+--------|
+    NONE____ KP_Q____ KP_W____ KP_F____ KP_P____ KP_B____ NONE____ NONE____    NONE____ NONE____ KP_J____ KP_L____ KP_U____ KP_Y____ KP_SQT__ NONE____ 
+// '--------+--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------+--------'
+                               NONE____ NONE____ NONE____ NONE____ NONE____    NONE____ NONE____ NONE____ NONE____ NONE____ 
+//                            '--------+--------+--------+--------+--------'  '--------+--------+--------+--------+--------'
+			>;
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
 		};
 	};
 };
+
+// .--------+--------+--------+--------+--------+--------.                                      .--------+--------+--------+--------+--------+--------.
+
+// |--------+--------+--------+--------+--------+--------|                                      |--------+--------+--------+--------+--------+--------|
+
+// |--------+--------+--------+--------+--------+--------+--------+--------.  .--------+--------+--------+--------+--------+--------+--------+--------|
+
+// '--------+--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------+--------'
+
+//                            '--------+--------+--------+--------+--------'  '--------+--------+--------+--------+--------'
+
+
