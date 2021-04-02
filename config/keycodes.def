@@ -1,0 +1,82 @@
+#define NONE____ &none
+#define ________ &trans
+
+#define EXT_SPC_ &lt EXTEND SPACE
+#define LWR_RET_ &lt LOWER ENTER
+#define RSE_BSP_ &lt RAISE BSPC
+#define SHIFT___ &sk LSHFT
+
+#define KP_ESC__ &kp ESC
+#define KP_TAB__ &kp TAB
+#define KP_LSHFT &kp LSHFT
+
+#define KP_A____ &kp A
+#define KP_B____ &kp B
+#define KP_C____ &kp C
+#define KP_D____ &kp D
+#define KP_E____ &kp E
+#define KP_F____ &kp F
+#define KP_G____ &kp G
+#define KP_H____ &kp H
+#define KP_I____ &kp I
+#define KP_J____ &kp J
+#define KP_K____ &kp K
+#define KP_L____ &kp L
+#define KP_M____ &kp M
+#define KP_N____ &kp N
+#define KP_O____ &kp O
+#define KP_P____ &kp P
+#define KP_Q____ &kp Q
+#define KP_R____ &kp R
+#define KP_S____ &kp S
+#define KP_T____ &kp T
+#define KP_U____ &kp U
+#define KP_V____ &kp V
+#define KP_W____ &kp W
+#define KP_X____ &kp X
+#define KP_Y____ &kp Y
+#define KP_Z____ &kp Z
+
+#define KP_1____ &kp NUMBER_1
+#define KP_2____ &kp NUMBER_2
+#define KP_3____ &kp NUMBER_3
+#define KP_4____ &kp NUMBER_4
+#define KP_5____ &kp NUMBER_5
+#define KP_6____ &kp NUMBER_6
+#define KP_7____ &kp NUMBER_7
+#define KP_8____ &kp NUMBER_8
+#define KP_9____ &kp NUMBER_9
+#define KP_0____ &kp NUMBER_0
+
+#define KP_PLUS_ &kp PLUS
+#define KP_MINS_ &kp MINUS
+#define KP_ASTR_ &kp ASTERISK
+#define KP_SLSH_ &kp SLASH
+#define KP_EQL__ &kp EQUAL
+
+#define KP_SQT__ &kp SQT
+#define KP_DOT__ &kp DOT
+#define KP_COMM_ &kp COMMA
+
+#define KP_F1___ &kp F1
+#define KP_F2___ &kp F2
+#define KP_F3___ &kp F3
+#define KP_F4___ &kp F4
+#define KP_F5___ &kp F5
+#define KP_F6___ &kp F6
+#define KP_F7___ &kp F7
+#define KP_F8___ &kp F8
+#define KP_F9___ &kp F9
+#define KP_F10__ &kp F10
+#define KP_F11__ &kp F11
+#define KP_F12__ &kp F12
+
+#define HM_A____ &hm LCTRL A
+#define HM_R____ &hm LALT  R
+#define HM_S____ &hm LSHFT S
+#define HM_T____ &hm LGUI  T
+#define HM_N____ &hm LGUI  N
+#define HM_E____ &hm LSHFT E
+#define HM_I____ &hm LALT  I
+#define HM_O____ &hm LCTRL O
+

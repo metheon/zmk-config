@@ -7,45 +7,30 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
-#define NONE____ &none
-#define KP_ESC__ &kp ESC
-#define KP_TAB__ &kp TAB
-#define KP_LSHFT &kp LSHFT
-
-#define KP_A____ &kp A
-#define KP_B____ &kp B
-#define KP_C____ &kp C
-#define KP_D____ &kp D
-#define KP_E____ &kp E
-#define KP_F____ &kp F
-#define KP_G____ &kp G
-#define KP_H____ &kp H
-#define KP_I____ &kp I
-#define KP_J____ &kp J
-#define KP_K____ &kp K
-#define KP_L____ &kp L
-#define KP_M____ &kp M
-#define KP_N____ &kp N
-#define KP_O____ &kp O
-#define KP_P____ &kp P
-#define KP_Q____ &kp Q
-#define KP_R____ &kp R
-#define KP_S____ &kp S
-#define KP_T____ &kp T
-#define KP_U____ &kp U
-#define KP_V____ &kp V
-#define KP_W____ &kp W
-#define KP_X____ &kp X
-#define KP_Y____ &kp Y
-#define KP_Z____ &kp Z
-
-#define KP_SQT__ &kp SQT
-#define KP_DOT__ &kp DOT
-#define KP_COMMA &kp COMMA
-#define KP_SLASH &kp SLASH
-
+#define DEFAULT 0
+#define LOWER   1
+#define RAISE   2
+#define ADJUST  3
+#define EXTEND  4
+#define ACCENTS 5
+#define MAGNET  6
 
 / {
+
+    behaviors {
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <300>;
+            quick_tap_ms = <300>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+    };
+
+#include "keycodes.def"
+
 	keymap {
 		compatible = "zmk,keymap";
 
@@ -54,11 +39,26 @@
 // .--------+--------+--------+--------+--------+--------.                                      .--------+--------+--------+--------+--------+--------.
     NONE____ KP_Q____ KP_W____ KP_F____ KP_P____ KP_B____                                        KP_J____ KP_L____ KP_U____ KP_Y____ KP_SQT__ NONE____ 
 // |--------+--------+--------+--------+--------+--------|                                      |--------+--------+--------+--------+--------+--------|
-    NONE____ KP_A____ KP_R____ KP_S____ KP_T____ KP_G____                                        KP_M____ KP_N____ KP_E____ KP_I____ KP_O____ NONE____ 
+    NONE____ HM_A____ HM_R____ HM_S____ HM_T____ KP_G____                                        KP_M____ HM_N____ HM_E____ HM_I____ HM_O____ NONE____ 
 // |--------+--------+--------+--------+--------+--------+--------+--------.  .--------+--------+--------+--------+--------+--------+--------+--------|
-    NONE____ KP_Z____ KP_X____ KP_C____ KP_D____ KP_V____ NONE____ NONE____    NONE____ NONE____ KP_K____ KP_H____ KP_COMMA KP_DOT__ KP_SLASH NONE____ 
+    NONE____ KP_Z____ KP_X____ KP_C____ KP_D____ KP_V____ NONE____ NONE____    NONE____ NONE____ KP_K____ KP_H____ KP_COMM_ KP_DOT__ KP_SLSH_ NONE____ 
 // '--------+--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------+--------'
-                               NONE____ NONE____ NONE____ NONE____ NONE____    NONE____ NONE____ NONE____ NONE____ NONE____ 
+                               NONE____ NONE____ NONE____ EXT_SPC_ LWR_RET_    RSE_BSP_ SHIFT___ NONE____ NONE____ NONE____ 
+//                            '--------+--------+--------+--------+--------'  '--------+--------+--------+--------+--------'
+			>;
+			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+		};
+
+		lower_layer {
+			bindings = <
+// .--------+--------+--------+--------+--------+--------.                                      .--------+--------+--------+--------+--------+--------.
+    NONE____ KP_F9___ KP_F10__ KP_F11__ KP_F12__ NONE____                                        KP_EQL__ KP_7____ KP_8____ KP_9____ KP_ASTR_ NONE____ 
+// |--------+--------+--------+--------+--------+--------|                                      |--------+--------+--------+--------+--------+--------|
+    NONE____ KP_F5___ KP_F6___ KP_F7___ KP_F8___ NONE____                                        KP_PLUS_ KP_4____ KP_5____ KP_6____ KP_0____ NONE____   
+// |--------+--------+--------+--------+--------+--------+--------+--------.  .--------+--------+--------+--------+--------+--------+--------+--------|
+    NONE____ KP_F1___ KP_F2___ KP_F3___ KP_F4___ NONE____ NONE____ NONE____    NONE____ NONE____ KP_MINS_ KP_1____ KP_2____ KP_3____ KP_SLSH_ NONE____ 
+// '--------+--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------+--------'
+                               NONE____ NONE____ NONE____ ________ ________    ________ ________ NONE____ NONE____ NONE____ 
 //                            '--------+--------+--------+--------+--------'  '--------+--------+--------+--------+--------'
 			>;
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
