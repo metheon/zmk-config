@@ -27,6 +27,15 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+        tl: thumb_layers {
+            compatible = "zmk,behavior-hold-tap";
+            label = "THUMB_LAYERS";
+            #binding-cells = <2>;
+            tapping-term-ms = <175>;
+            quick_tap_ms = <175>;
+            flavor = "balanced";
+            bindings = <&kp>, <&kp>;
+        };
     };
 
 #include "keycodes.def"

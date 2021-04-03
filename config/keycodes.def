@@ -1,9 +1,9 @@
 #define NONE____ &none
 #define ________ &trans
 
-#define EXT_SPC_ &lt EXTEND SPACE
-#define LWR_RET_ &lt LOWER ENTER
-#define RSE_BSP_ &lt RAISE BSPC
+#define EXT_SPC_ &tl EXTEND SPACE
+#define LWR_RET_ &tl LOWER ENTER
+#define RSE_BSP_ &tl RAISE BSPC
 #define SHIFT___ &sk LSHFT
 
 #define KP_ESC__ &kp ESC
