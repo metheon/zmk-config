@@ -1,0 +1,175 @@
+// Letters
+#define _DK_A____ A              // A
+#define _DK_B____ B              // B
+#define _DK_C____ C              // C
+#define _DK_D____ D              // D
+#define _DK_E____ E              // E
+#define _DK_F____ F              // F
+#define _DK_G____ G              // G
+#define _DK_H____ H              // H
+#define _DK_I____ I              // I
+#define _DK_J____ J              // J
+#define _DK_K____ K              // K
+#define _DK_L____ L              // L
+#define _DK_M____ M              // M
+#define _DK_N____ N              // N
+#define _DK_O____ O              // O
+#define _DK_P____ P              // P
+#define _DK_Q____ Q              // Q
+#define _DK_R____ R              // R
+#define _DK_S____ S              // S
+#define _DK_T____ T              // T
+#define _DK_U____ U              // U
+#define _DK_V____ V              // V
+#define _DK_W____ W              // W
+#define _DK_X____ X              // X
+#define _DK_Y____ Y              // Y
+#define _DK_Z____ Z              // Z
+#define _DK_AE___ SEMICOLON      // Æ
+#define _DK_OE___ SINGLE_QUOTE   // Ø
+#define _DK_AA___ LEFT_BRACKET   // Å
+
+// Number row
+#define _DK_DLLR_ NON_US_HASH    // $
+#define _DK_1____ N1             // 1
+#define _DK_2____ N2             // 2
+#define _DK_3____ N3             // 3
+#define _DK_4____ N4             // 4
+#define _DK_5____ N5             // 5
+#define _DK_6____ N6             // 6
+#define _DK_7____ N7             // 7
+#define _DK_8____ N8             // 8
+#define _DK_9____ N9             // 9
+#define _DK_0____ N0             // 0
+#define _DK_PLUS_ MINUS          // +
+#define _DK_ACUTE EQUAL          // ´
+
+#define _DK_F1___ F1             // F1
+#define _DK_F2___ F2             // F2
+#define _DK_F3___ F3             // F3
+#define _DK_F4___ F4             // F4
+#define _DK_F5___ F5             // F5
+#define _DK_F6___ F6             // F6
+#define _DK_F7___ F7             // F7
+#define _DK_F8___ F8             // F8
+#define _DK_F9___ F9             // F9
+#define _DK_F10__ F10            // F10
+#define _DK_F11__ F11            // F11
+#define _DK_F12__ F12            // F12
+
+// Shifted number row
+#define _DK_SECT_ LS(_DK_DLLR_)  // §
+#define _DK_EXCL_ LS(_DK_1____)  // !
+#define _DK_DQT__ LS(_DK_2____)  // "
+#define _DK_HASH_ LS(_DK_3____)  // #
+#define _DK_EURO_ LS(_DK_4____)  // €
+#define _DK_PERC_ LS(_DK_5____)  // %
+#define _DK_AMPS_ LS(_DK_6____)  // &
+#define _DK_SLASH LS(_DK_7____)  // /
+#define _DK_LPAR_ LS(_DK_8____)  // (
+#define _DK_RPAR_ LS(_DK_9____)  // )
+#define _DK_EQUAL LS(_DK_0____)  // =
+#define _DK_QMARK LS(_DK_PLUS_)  // ?
+#define _DK_GRAVE LS(_DK_ACUTE)  // `
+
+// Alt number row (some omitted due to lack of usage)
+#define _DK_APPLE LA(_DK_DLLR_)  // 
+#define _DK_R_EXL LA(_DK_1____)  // ¡
+#define _DK_POUND LA(_DK_4____)  // £
+#define _DK_INFIN LA(_DK_5____)  // ∞
+#define _DK_TM___ LA(_DK_6____)  // ™
+#define _DK_LBRC_ LA(_DK_8____)  // [
+#define _DK_RBRC_ LA(_DK_9____)  // ]
+#define _DK_DIFF_ LA(_DK_0____)  // ≠
+
+// Alt shifted number row (some omitted due to lack of usage
+#define _DK_PERM_ LA(_DK_PERC_)  // ‰
+#define _DK_BSLSH LA(_DK_SLASH)  // backslash
+#define _DK_LCBRC LA(_DK_LBRC_)  // {
+#define _DK_RCBRC LA(_DK_RBRC_)  // }
+#define _DK_AL_EQ LA(_DK_EQUAL)  // ≈
+#define _DK_R_QST LA(_DK_QMARK)  // ¿
+#define _DK_ACC_N LA(_DK_N____)  // Ñ
+
+// Other symbols
+#define _DK_LS_TH GRAVE          // <
+#define _DK_GT_TH LS(_DK_LS_TH)  // >
+#define _DK_LT_EQ LA(_DK_LS_TH)  // ≤
+#define _DK_GT_EQ LA(_DK_GT_TH)  // ≥
+
+#define _DK_COMMA COMMA          // ,
+#define _DK_SCLN_ LS(_DK_COMMA)  // ;
+
+#define _DK_DOT__ DOT            // .
+#define _DK_COLON LS(_DK_DOT__)  // :
+
+#define _DK_MINUS SLASH          // -
+#define _DK_UNDS_ LS(_DK_MINUS)  // _
+
+#define _DK_SQT__ BACKSLASH      // '
+#define _DK_ASTR_ LS(_DK_SQT__)  // *
+#define _DK_AT___ LA(_DK_SQT__)  // @
+#define _DK_DGREE LA(_DK_Q____)  // °
+
+#define _DK_DIAC_ RIGHT_BRACKET  // ¨
+#define _DK_TILDE LA(_DK_DIAC_)  // ~
+#define _DK_CARET LS(_DK_TILDE)  // ^ (note: non-dead version)
+
+#define _DK_PIPE_ LA(_DK_I____)  // |
+
+// Standard keys
+#define _DK_ESC__ ESC            // Escape
+#define _DK_TAB__ TAB            // Tabulator
+#define _DK_STAB_ LS(_DK_TAB__)  // Shift Tabulator
+#define _DK_SHIFT LSHFT          // Left Shift
+#define _DK_CTRL_ LCTRL          // Left Control
+#define _DK_ALT__ LALT           // Left Alt
+#define _DK_GUI__ LGUI           // Left GUI
+#define _DK_SPACE SPACE          // Space
+#define _DK_ENTER ENTER          // Enter
+#define _DK_BSPC_ BSPC           // Backspace
+#define _DK_DEL__ DELETE         // Delete
+
+#define _DK_UP___ UP             // Up
+#define _DK_DOWN_ DOWN           // Down
+#define _DK_LEFT_ LEFT           // Left
+#define _DK_RIGHT RIGHT          // Right
+#define _DK_PG_UP PG_UP          // Page Up
+#define _DK_PG_DN PG_DN          // Page Down
+#define _DK_HOME_ HOME           // Home
+#define _DK_END__ END            // End
+
+#define _DK_INSRT INSERT         // Insert
+
+#define _DK_UNDO_ LG(_DK_Z____)  // Undo (Command Z)
+#define _DK_CUT__ LG(_DK_X____)  // Cut (Command X)
+#define _DK_COPY_ LG(_DK_C____)  // Copy (Command C)
+#define _DK_PASTE LG(_DK_V____)  // Paste (Command V)
+
+#define _DK_VOLMT K_MUTE         // Volume Mute
+#define _DK_VOLUP C_VOLUME_UP    // Volume Up
+#define _DK_VOLDN C_VOLUME_DOWN  // Volume Down
+#define _DK_PLAY_ C_PLAY_PAUSE   // Play
+#define _DK_PREV_ C_PREV         // Previous
+#define _DK_NEXT_ C_NEXT         // Next
+
+// Full name versions of the magnet shortcuts
+// https://magnet.crowdcafe.com/
+#define MAGNET_FULLSCREEN               LC(LA((_DK_ENTER))
+#define MAGNET_LEFT_HALF                LC(LA((_DK_LEFT))
+#define MAGNET_RIGHT_HALF               LC(LA((_DK_RIGHT))
+#define MAGNET_UPPER_HALF               LC(LA((_DK_UP))
+#define MAGNET_BOTTOM_HALF              LC(LA((_DK_DOWN))
+
+#define MAGNET_LEFT_THIRD               LC(LA((_DK_D))
+#define MAGNET_MIDDLE_THIRD             LC(LA((_DK_F))
+#define MAGNET_RIGHT_THIRD              LC(LA((_DK_G))
+
+#define MAGNET_UPPER_LEFT_QUADRANT      LC(LA((_DK_U))
+#define MAGNET_UPPER_RIGHT_QUADRANT     LC(LA((_DK_I))
+#define MAGNET_BOTTOM_LEFT_QUADRANT     LC(LA((_DK_J))
+#define MAGNET_BOTTOM_RIGHT_QUADRANT    LC(LA((_DK_K))
+
+#define MAGNET_LEFT_TWO_THIRDS          LC(LA((_DK_E))
+#define MAGNET_RIGHT_TWO_THIRDS         LC(LA((_DK_T))
+
