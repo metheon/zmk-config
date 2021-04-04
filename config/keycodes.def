@@ -80,3 +80,66 @@
 #define HM_I____ &hm LALT  I
 #define HM_O____ &hm LCTRL O
 
+// Using Danish keyboard layout on my mac
+
+// Letters
+#define DK_A____ &hm LCTRL A
+#define DK_B____ &kp       B
+#define DK_C____ &kp       C
+#define DK_D____ &kp       D
+#define DK_E____ &hm LSHFT E
+#define DK_F____ &kp       F
+#define DK_G____ &kp       G
+#define DK_H____ &kp       H
+#define DK_I____ &hm LALT I
+#define DK_J____ &kp       J
+#define DK_K____ &kp       K
+#define DK_L____ &kp       L
+#define DK_M____ &kp       M
+#define DK_N____ &hm LGUI  N
+#define DK_O____ &hm LCTRL O
+#define DK_P____ &kp       P
+#define DK_Q____ &kp       Q
+#define DK_R____ &hm LALT  R
+#define DK_S____ &hm LSHFT S
+#define DK_T____ &hm LGUI  T
+#define DK_U____ &kp       U
+#define DK_V____ &kp       V
+#define DK_W____ &kp       W
+#define DK_X____ &kp       X
+#define DK_Y____ &kp       Y
+#define DK_Z____ &kp       Z
+#define DK_AE___ &kp       SEMICOLON
+#define DK_OE___ &kp       SINGLE_QUOTE
+#define DK_AA___ &kp       LEFT_BRACKET
+
+// Number row
+#define DK_DLLR_ &kp       GRAVE
+#define DK_1____ &kp       N1
+#define DK_2____ &kp       N2
+#define DK_3____ &kp       N3
+#define DK_4____ &kp       N4
+#define DK_5____ &kp       N5
+#define DK_6____ &kp       N6
+#define DK_7____ &kp       N7
+#define DK_8____ &kp       N8
+#define DK_9____ &kp       N9
+#define DK_0____ &kp       N0
+#define DK_PLUS_ &kp       MINUS
+#define DK_ACUTE &kp       EQUAL
+
+// Shifted number row
+#define DK_SECT_ &kp      LS(DK_DLLR_)
+#define DK_EXCL_ &kp      LS(DK_1____)
+#define DK_DQT__ &kp      LS(DK_2____)
+#define DK_HASH_ &kp      LS(DK_3____)
+#define DK_EUR__ &kp      LS(DK_4____)
+#define DK_PERC_ &kp      LS(DK_5____)
+#define DK_AMPS_ &kp      LS(DK_6____)
+#define DK_SLASH &kp      LS(DK_7____)
+#define DK_LPAR_ &kp      LS(DK_8____)
+#define DK_RPAR_ &kp      LS(DK_9____)
+#define DK_EQUAL &kp      LS(DK_0____)
+#define DK_QMARK &kp      LS(DK_PLUS_)
+#define DK_GRAVE &kp      LS(DK_ACUTE)
+
