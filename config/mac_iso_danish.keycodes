@@ -153,23 +153,43 @@
 #define _DK_PREV_ C_PREV         // Previous
 #define _DK_NEXT_ C_NEXT         // Next
 
-// Full name versions of the magnet shortcuts
+// Full name versions of the magnet shortcuts (window management app on mac)
 // https://magnet.crowdcafe.com/
-#define MAGNET_FULLSCREEN               LC(LA((_DK_ENTER))
-#define MAGNET_LEFT_HALF                LC(LA((_DK_LEFT))
-#define MAGNET_RIGHT_HALF               LC(LA((_DK_RIGHT))
-#define MAGNET_UPPER_HALF               LC(LA((_DK_UP))
-#define MAGNET_BOTTOM_HALF              LC(LA((_DK_DOWN))
+#define _MAGNET_FULLSCREEN              LC(LA((_DK_ENTER))
+#define _MAGNET_LEFT_HALF               LC(LA((_DK_LEFT_))
+#define _MAGNET_RIGHT_HALF              LC(LA((_DK_RIGHT))
+#define _MAGNET_UPPER_HALF              LC(LA((_DK_UP___))
+#define _MAGNET_BOTTOM_HALF             LC(LA((_DK_DOWN_))
 
-#define MAGNET_LEFT_THIRD               LC(LA((_DK_D))
-#define MAGNET_MIDDLE_THIRD             LC(LA((_DK_F))
-#define MAGNET_RIGHT_THIRD              LC(LA((_DK_G))
+#define _MAGNET_LEFT_THIRD              LC(LA((_DK_D____))
+#define _MAGNET_MIDDLE_THIRD            LC(LA((_DK_F____))
+#define _MAGNET_RIGHT_THIRD             LC(LA((_DK_G____))
 
-#define MAGNET_UPPER_LEFT_QUADRANT      LC(LA((_DK_U))
-#define MAGNET_UPPER_RIGHT_QUADRANT     LC(LA((_DK_I))
-#define MAGNET_BOTTOM_LEFT_QUADRANT     LC(LA((_DK_J))
-#define MAGNET_BOTTOM_RIGHT_QUADRANT    LC(LA((_DK_K))
+#define _MAGNET_UPPER_LEFT_QUADRANT     LC(LA((_DK_U____))
+#define _MAGNET_UPPER_RIGHT_QUADRANT    LC(LA((_DK_I____))
+#define _MAGNET_BOTTOM_LEFT_QUADRANT    LC(LA((_DK_J____))
+#define _MAGNET_BOTTOM_RIGHT_QUADRANT   LC(LA((_DK_K____))
 
-#define MAGNET_LEFT_TWO_THIRDS          LC(LA((_DK_E))
-#define MAGNET_RIGHT_TWO_THIRDS         LC(LA((_DK_T))
+#define _MAGNET_LEFT_TWO_THIRDS         LC(LA((_DK_E____))
+#define _MAGNET_RIGHT_TWO_THIRDS        LC(LA((_DK_T____))
 
+// clipboard
+#define _UNDO                           LG(_DK_Z____)
+#define _CUT                            LG(_DK_X____)
+#define _COPY                           LG(_DK_C____)
+#define _PASTE                          LG(_DK_V____)
+
+// General shortcuts
+#define _NEXT_TAB                       LC(_DK_TAB__)
+#define _PREV_TAB                       LC(_DK_STAB_)
+#define _NEXT_DESKTOP                   LC(_DK_RIGHT)
+#define _PREV_DESKTOP                   LC(_DK_LEFT_)
+#define _SCREENSHOT                     LG(LS(_DK_5____))
+
+#define _LOCK_COMPUTER                  LC(LG(DK_Q____))
+#define _ALFRED                         LG(_DK_SPACE)
+#define _BACKSPACE_ONE_WORD             LALT(_DK_BSPC_)
+#define _DELETE_ONE_WORD                LALT(_DK_DEL__)
+
+#define _COPY_TERMINAL                  LC(_DK_INSRT)
+#define _PASTE_TERMINAL                 LS(_DK_INSRT)
