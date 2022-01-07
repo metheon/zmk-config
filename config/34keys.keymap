@@ -59,8 +59,7 @@
             label = "_NAV";
             bindings = <
                 // ╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-                    NONE____   NONE____   NONE____   NXT_DSKT   LOCK_MAC       NONE____   NONE____   DK_UP___   NONE____   NONE____
-                //  PREV_TAB   NEXT_TAB   PRV_DSKT   NXT_DSKT   LOCK_MAC       NONE____   NONE____   DK_UP___   NONE____   NONE____
+                    PREV_TAB   NEXT_TAB   PRV_DSKT   NXT_DSKT   LOCK_MAC       NONE____   NONE____   DK_UP___   NONE____   NONE____
                 // ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
                     DK_CTRL_   DK_ALT__   DK_SHIFT   DK_GUI__   ALFRED__       NONE____   DK_LEFT_   DK_DOWN_   DK_RIGHT   NONE____
                 // ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
