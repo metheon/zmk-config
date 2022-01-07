@@ -184,9 +184,9 @@
 #define _PREV_TAB                       LC(_DK_STAB_)
 #define _NEXT_DESKTOP                   LC(_DK_RIGHT)
 #define _PREV_DESKTOP                   LC(_DK_LEFT_)
-#define _SCREENSHOT                     LG(LS(_DK_5____))
 
-#define _LOCK_COMPUTER                  LC(LG(DK_Q____))
+#define _SCREENSHOT                     LG(LS(_DK_5____))
+#define _LOCK_COMPUTER                  LC(LG(_DK_Q____))
 #define _ALFRED                         LG(_DK_SPACE)
 #define _BACKSPACE_ONE_WORD             LALT(_DK_BSPC_)
 #define _DELETE_ONE_WORD                LALT(_DK_DEL__)
