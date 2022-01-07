@@ -186,7 +186,7 @@
 #define MG_R23RD &kp        _MAGNET_RIGHT_TWO_THIRDS
 
 // Capsword
-#define CAPSWORD &capsword
+#define CAPSWORD &caps_word
 
 // One Shot Shift
 #define SHIFT___ &sk        _DK_SHIFT
