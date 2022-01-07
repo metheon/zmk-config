@@ -167,23 +167,23 @@
 #define NAV_ZERO &lt        _NAV _DK_0____
 
 // All shortcuts for Magnet
-#define MG_FSCRN &kp        MAGNET_FULLSCREEN
-#define MG_LT_HF &kp        MAGNET_LEFT_HALF
-#define MG_RT_HF &kp        MAGNET_RIGHT_HALF
-#define MG_UP_HF &kp        MAGNET_UPPER_HALF
-#define MG_BM_HF &kp        MAGNET_BOTTOM_HALF
+#define MG_FSCRN &kp        _MAGNET_FULLSCREEN
+#define MG_LT_HF &kp        _MAGNET_LEFT_HALF
+#define MG_RT_HF &kp        _MAGNET_RIGHT_HALF
+#define MG_UP_HF &kp        _MAGNET_UPPER_HALF
+#define MG_BM_HF &kp        _MAGNET_BOTTOM_HALF
 
-#define MG_LT3RD &kp        MAGNET_LEFT_THIRD
-#define MG_MD3RD &kp        MAGNET_MIDDLE_THIRD
-#define MG_RT3RD &kp        MAGNET_RIGHT_THIRD
+#define MG_LT3RD &kp        _MAGNET_LEFT_THIRD
+#define MG_MD3RD &kp        _MAGNET_MIDDLE_THIRD
+#define MG_RT3RD &kp        _MAGNET_RIGHT_THIRD
 
-#define MG_UL_QT &kp        MAGNET_UPPER_LEFT_QUADRANT
-#define MG_UR_QT &kp        MAGNET_UPPER_RIGHT_QUADRANT
-#define MG_BL_QT &kp        MAGNET_BOTTOM_LEFT_QUADRANT
-#define MG_BR_QT &kp        MAGNET_BOTTOM_RIGHT_QUADRANT
+#define MG_UL_QT &kp        _MAGNET_UPPER_LEFT_QUADRANT
+#define MG_UR_QT &kp        _MAGNET_UPPER_RIGHT_QUADRANT
+#define MG_BL_QT &kp        _MAGNET_BOTTOM_LEFT_QUADRANT
+#define MG_BR_QT &kp        _MAGNET_BOTTOM_RIGHT_QUADRANT
 
-#define MG_L23RD &kp        MAGNET_LEFT_TWO_THIRDS
-#define MG_R23RD &kp        MAGNET_RIGHT_TWO_THIRDS
+#define MG_L23RD &kp        _MAGNET_LEFT_TWO_THIRDS
+#define MG_R23RD &kp        _MAGNET_RIGHT_TWO_THIRDS
 
 // Capsword
 #define CAPSWORD &capsword
