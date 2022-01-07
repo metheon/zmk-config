@@ -227,4 +227,6 @@
 // output
 #define OUT_USB_ &out       OUT_USB
 #define OUT_BLE_ &out       OUT_BLE
-#define OUT_TOG_ &out       OUT_TOG 
+#define OUT_TOG_ &out       OUT_TOG
+
+#define SK_SHIFT &sk        _DK_SHIFT
