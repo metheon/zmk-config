@@ -19,6 +19,14 @@
 
 / {
 
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+        tri_layer {
+            if-layers = <_NAV _NUM>;
+            then-layer = <_SYS>;
+        };
+    };
+
     combos {
         #include "combos.dtsi"
     };
@@ -48,9 +56,10 @@
                 // ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
                     DK_A____   DK_R____   DK_S____   DK_T____   DK_G____       DK_M____   DK_N____   DK_E____   DK_I____   DK_O____
                 // ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-                    DK_AA___   DK_X____   DK_C____   DK_D____   DK_V____       DK_K____   DK_H____   DK_COMMA   DK_DOT__   DK_OE___
+                    &reset   DK_X____   DK_C____   DK_D____   DK_V____       DK_K____   DK_H____   DK_COMMA   DK_DOT__   &reset
+                //  DK_AA___   DK_X____   DK_C____   DK_D____   DK_V____       DK_K____   DK_H____   DK_COMMA   DK_DOT__   DK_OE___
                 // ╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                                    SYM_TAB_   NAV_SPC_       NUM_BSPC   SYM_DEL_
+                                                      SYM_TAB_   NAV_SPC_       NUM_BSPC   SYM_DEL_
                 //                                  ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
