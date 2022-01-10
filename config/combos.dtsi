@@ -14,6 +14,7 @@ compatible = "zmk,combos";
     bindings = <BINDINGS>; \
     key-positions = <KEYPOS>; \
     layers = <LAYERS>; \
+    timeout-ms = <30>; \
   };
 
 COMBO(COMBO_ENTER, DK_ENTER, 16 17 18, _COL)
