@@ -190,7 +190,7 @@
 #define SCRM_SNK &ssc
 
 // One Shot Shift
-#define SHIFT___ &oss
+#define SK_SHIFT &oss
 
 // clipboard
 #define UNDO____ &kp        _UNDO
@@ -229,7 +229,5 @@
 #define OUT_USB_ &out       OUT_USB
 #define OUT_BLE_ &out       OUT_BLE
 #define OUT_TOG_ &out       OUT_TOG
-
-#define SK_SHIFT &sk        _DK_SHIFT
 
 #define STICKY_TIMEOUT      2000
