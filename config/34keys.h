@@ -189,7 +189,7 @@
 #define CAPSWORD &caps_word
 
 // One Shot Shift
-#define SHIFT___ &sk        _DK_SHIFT
+#define SHIFT___ &oss
 
 // clipboard
 #define UNDO____ &kp        _UNDO

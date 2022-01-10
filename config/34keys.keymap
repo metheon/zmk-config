@@ -19,6 +19,13 @@
 
 / {
 
+    oss: one_shot_shift {
+        compatible = "zmk,behavior-caps-word";
+        label = "ONE_SHOT_SHIFT";
+        #binding-cells = <0>;
+        continue-list = <>;
+    };
+
     conditional_layers {
         compatible = "zmk,conditional-layers";
         tri_layer {
