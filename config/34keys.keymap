@@ -33,12 +33,12 @@
 
     behaviors {
 
-        ssc: caps_word_screaming_snake_case {
-            compatible = "zmk,behavior-caps-word";
-            label = "CAPS_WORD_SCREAMING_SNAKE_CASE;
-            #binding-cells = <0>;
-            continue-list = <DK_UNDS_ _DK_BSPC_>;
-        };
+//      ssc: caps_word_screaming_snake_case {
+//          compatible = "zmk,behavior-caps-word";
+//          label = "CAPS_WORD_SCREAMING_SNAKE_CASE;
+//          #binding-cells = <0>;
+//          continue-list = <DK_UNDS_ _DK_BSPC_>;
+//      };
 
         oss: sticky_key_quick_release {
             compatible = "zmk,behavior-sticky-key";
