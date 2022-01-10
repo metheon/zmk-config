@@ -6,7 +6,7 @@
 #include "34keys.h"
 
 &sk {
-    release-after-ms = <2000>;
+    release-after-ms = <100>;
 };
 
 &caps_word {
