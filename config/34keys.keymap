@@ -57,13 +57,6 @@
 //            quick-release;
 //        };
 
-        oss: one_shot_shift {
-            compatible = "zmk,behavior-caps-word";
-            label = "ONE_SHOT_SHIFT";
-            #binding-cells = <0>;
-            continue-list = <>;
-        };
-
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
@@ -93,9 +86,9 @@
             label = "_COL";
             bindings = <
                 // ╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-                    DK_AE___   DK_W____   DK_F____   DK_P____   DK_B____       DK_J____   DK_L____   DK_U____   DK_Y____   DK_SQT__
+                     DK_AE___   DK_W____   DK_F____   DK_P____   DK_B____       DK_J____   DK_L____   DK_U____   DK_Y____   DK_SQT__
                 // ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-                    DK_A____   DK_R____   DK_S____   DK_T____   DK_G____       DK_M____   DK_N____   DK_E____   DK_I____   DK_O____
+                     DK_A____   DK_R____   DK_S____   DK_T____   DK_G____       DK_M____   DK_N____   DK_E____   DK_I____   DK_O____
                 // ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
                      DK_AA___   DK_X____   DK_C____   DK_D____   DK_V____       DK_K____   DK_H____   DK_COMMA   DK_DOT__   DK_OE___
                 // ╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
@@ -108,13 +101,13 @@
             label = "_NAV";
             bindings = <
                 // ╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-                    PREV_TAB   NEXT_TAB   PRV_DSKT   NXT_DSKT   LOCK_MAC       NONE____   DK_STAB_   DK_UP___   DK_TAB__   NONE____
+                     PREV_TAB   NEXT_TAB   PRV_DSKT   NXT_DSKT   LOCK_MAC       NONE____   DK_STAB_   DK_UP___   DK_TAB__   NONE____
                 // ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-                    DK_CTRL_   DK_ALT__   DK_SHIFT   DK_GUI__   ALFRED__       NONE____   DK_LEFT_   DK_DOWN_   DK_RIGHT   NONE____
+                     DK_CTRL_   DK_ALT__   DK_SHIFT   DK_GUI__   ALFRED__       NONE____   DK_LEFT_   DK_DOWN_   DK_RIGHT   NONE____
                 // ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-                    UNDO____   CUT_____   COPY____   PASTE___   SCRNSHOT       NONE____   CAPSWORD   NONE____   NONE____   NONE____
+                     UNDO____   CUT_____   COPY____   PASTE___   SCRNSHOT       NONE____   CAPSWORD   NONE____   NONE____   NONE____
                 // ╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                                    ________   ________       ________   ________
+                                                      ________   ________       ________   ________
                 //                                  ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -123,13 +116,13 @@
             label = "_NUM";
             bindings = <
                 // ╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-                    NONE____   DK_7____   DK_8____   DK_9____   NONE____       NONE____   DK_EQUAL   DK_LPAR_   DK_RPAR_   NONE____
+                     NONE____   DK_7____   DK_8____   DK_9____   NONE____       NONE____   DK_EQUAL   DK_LPAR_   DK_RPAR_   NONE____
                 // ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-                    NONE____   DK_4____   DK_5____   DK_6____   NONE____       NONE____   DK_GUI__   DK_SHIFT   DK_ALT__   DK_CTRL_
+                     NONE____   DK_4____   DK_5____   DK_6____   NONE____       NONE____   DK_GUI__   DK_SHIFT   DK_ALT__   DK_CTRL_
                 // ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-                    NONE____   DK_1____   DK_2____   DK_3____   NONE____       NONE____   DK_PLUS_   DK_MINUS   DK_ASTR_   DK_SLASH
+                     NONE____   DK_1____   DK_2____   DK_3____   NONE____       NONE____   DK_PLUS_   DK_MINUS   DK_ASTR_   DK_SLASH
                 // ╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                                    ________   NAV_ZERO       ________   ________
+                                                      ________   NAV_ZERO       ________   ________
                 //                                  ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -138,13 +131,13 @@
             label = "_SYM";
             bindings = <
                 // ╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-                    DK_GRAVE   DK_CARET   DK_HASH_   DK_TILDE   DK_LCBRC       DK_RCBRC   DK_DLLR_   DK_EURO_   DK_POUND   DK_DQT__
+                     DK_GRAVE   DK_CARET   DK_HASH_   DK_TILDE   DK_LCBRC       DK_RCBRC   DK_DLLR_   DK_EURO_   DK_POUND   DK_DQT__
                 // ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-                    DK_AT___   DK_SLASH   DK_MINUS   DK_SCLN_   DK_LPAR_       DK_RPAR_   DK_EQUAL   DK_EXCL_   DK_AMPS_   DK_PIPE_
+                     DK_AT___   DK_SLASH   DK_MINUS   DK_SCLN_   DK_LPAR_       DK_RPAR_   DK_EQUAL   DK_EXCL_   DK_AMPS_   DK_PIPE_
                 // ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-                    DK_BSLSH   DK_QMARK   DK_UNDS_   DK_COLON   DK_LBRC_       DK_RBRC_   DK_PERC_   DK_LS_TH   DK_GT_TH   DK_SLASH
+                     DK_BSLSH   DK_QMARK   DK_UNDS_   DK_COLON   DK_LBRC_       DK_RBRC_   DK_PERC_   DK_LS_TH   DK_GT_TH   DK_SLASH
                 // ╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                                    ________   ________       ________   ________
+                                                      ________   ________       ________   ________
                 //                                  ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -153,13 +146,13 @@
             label = "_SYS";
             bindings = <
                 // ╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-                    RESET___   DK_VOLMT   DK_VOLDN   DK_VOLUP   BOOTLOAD       MG_UL_QT   MG_L23RD   MG_UP_HF   MG_R23RD   MG_UR_QT
+                     RESET___   DK_VOLMT   DK_VOLDN   DK_VOLUP   BOOTLOAD       MG_UL_QT   MG_L23RD   MG_UP_HF   MG_R23RD   MG_UR_QT
                 // ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-                    BT_CLEAR   DK_PREV_   DK_PLAY_   DK_NEXT_   OUT_TOG_       MG_FSCRN   MG_LT_HF   MG_BM_HF   MG_RT_HF   MG_FSCRN
+                     BT_CLEAR   DK_PREV_   DK_PLAY_   DK_NEXT_   OUT_TOG_       MG_FSCRN   MG_LT_HF   MG_BM_HF   MG_RT_HF   MG_FSCRN
                 // ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-                    BT_PREV_   BT_SEL_1   BT_SEL_2   BT_SEL_3   BT_NEXT_       MG_BL_QT   MG_LT3RD   MG_MD3RD   MG_RT3RD   MG_BR_QT
+                     BT_PREV_   BT_SEL_1   BT_SEL_2   BT_SEL_3   BT_NEXT_       MG_BL_QT   MG_LT3RD   MG_MD3RD   MG_RT3RD   MG_BR_QT
                 // ╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                                     ________   ________       ________   ________
+                                                      ________   ________       ________   ________
                 //                                  ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
