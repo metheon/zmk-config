@@ -37,7 +37,7 @@
             compatible = "zmk,behavior-caps-word";
             label = "CAPS_WORD_SCREAMING_SNAKE_CASE";
             #binding-cells = <0>;
-            continue-list = <DK_UNDS_ _DK_BSPC_>;
+            continue-list = <_DK_UNDS_ _DK_BSPC_>;
         };
 
         oss: sticky_key_quick_release {
