@@ -187,7 +187,7 @@
 
 // Capsword
 #define CAPSWORD &caps_word
-#define SCRM_SNK &none//ssc
+#define SCRM_SNK &ssc
 
 // One Shot Shift
 #define SHIFT___ &oss
