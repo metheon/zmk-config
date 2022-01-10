@@ -43,9 +43,9 @@
             bindings = <&kp>, <&kp>;
         };
 
-        lt: behavior_layer_tap {
+        tk: thumb_keys {
             compatible = "zmk,behavior-hold-tap";
-            label = "LAYER_TAP";
+            label = "THUMB_KEYS";
             #binding-cells = <2>;
             tapping-term-ms = <300>;
             quick-tap-ms = <200>;

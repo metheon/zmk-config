@@ -159,12 +159,12 @@
 #define _FUN                5 // Funpad
 
 // Thumb keys, two on each hand, left to right
-#define SYM_TAB_ &lt        _SYM _DK_TAB__
-#define NAV_SPC_ &lt        _NAV _DK_SPACE
-#define NUM_BSPC &lt        _NUM _DK_BSPC_
-#define SYM_DEL_ &lt        _SYM _DK_DEL__
+#define SYM_TAB_ &tk        _SYM _DK_TAB__
+#define NAV_SPC_ &tk        _NAV _DK_SPACE
+#define NUM_BSPC &tk        _NUM _DK_BSPC_
+#define SYM_DEL_ &tk        _SYM _DK_DEL__
 // On the numpad layer, NAV_SPC_ is overridden to output zero
-#define NAV_ZERO &lt        _NAV _DK_0____
+#define NAV_ZERO &tk        _NAV _DK_0____
 
 // All shortcuts for Magnet
 #define MG_FSCRN &kp        _MAGNET_FULLSCREEN
