@@ -160,7 +160,7 @@
 
 // Thumb keys, two on each hand, left to right
 #define SYM_TAB_ &tk        _SYM _DK_TAB__
-#define NAV_SPC_ &tk        _NAV _DK_SPACE
+#define NAV_SPC_ &mmsu      // mod morphed space to underscore
 #define NUM_BSPC &tk        _NUM _DK_BSPC_
 #define SYM_DEL_ &tk        _SYM _DK_DEL__
 // On the numpad layer, NAV_SPC_ is overridden to output zero
@@ -232,4 +232,4 @@
 
 #define SK_SHIFT &sk        _DK_SHIFT
 
-#define STICKY_TIMEOUT 2000
+#define STICKY_TIMEOUT      2000

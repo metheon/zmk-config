@@ -33,6 +33,13 @@
 
     behaviors {
 
+        ssc: caps_word_screaming_snake_case {
+            compatible = "zmk,behavior-caps-word";
+            label = "CAPS_WORD_SCREAMING_SNAKE_CASE;
+            #binding-cells = <0>;
+            continue-list = <DK_UNDS_ _DK_BSPC_>;
+        };
+
         oss: sticky_key_quick_release {
             compatible = "zmk,behavior-sticky-key";
             label = "STICKY_KEY_QUICK_RELEASE";
@@ -42,19 +49,12 @@
             quick-release;
         };
 
-        mm_su: mod_morph_space_underscore {
+        mmsu: mod_morph_space_underscore {
             compatible = "zmk,behavior-mod-morph";
             label = "MM_SPACE_UNDERSCORE";
             #binding-cells = <0>;
-            bindings = <NAV_SPC_>, <DK_UNDS_>;
+            bindings = <&tk _NAV _DK_SPACE>, <DK_UNDS_>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        ssc: caps_word_screaming_snake_case {
-            compatible = "zmk,behavior-caps-word";
-            label = "CAPS_WORD_SCREAMING_SNAKE_CASE;
-            #binding-cells = <0>;
-            continue-list = <DK_UNDS_ _DK_BSPC_>;
         };
 
         hm: homerow_mods {
