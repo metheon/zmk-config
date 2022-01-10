@@ -10,7 +10,7 @@
 };
 
 &caps_word {
-    continue-list = <UNDERSCORE MINUS BACKSPACE>;
+    continue-list = <_DK_BSPC_>;
 };
 
 &kscan0 {
@@ -26,6 +26,21 @@
         bindings = <&kp>;
         release-after-ms = <STICKY_TIMEOUT>;
         quick-release;
+    };
+
+    mm_su: mod_morph_space_underscore {
+        compatible = "zmk,behavior-mod-morph";
+        label = "MM_SPACE_UNDERSCORE";
+        #binding-cells = <0>;
+        bindings = <NAV_SPC_>, <DK_UNDS_>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+
+    ssc: caps_word_screaming_snake_case {
+        compatible = "zmk,behavior-caps-word";
+        label = "CAPS_WORD_SCREAMING_SNAKE_CASE;
+        #binding-cells = <0>;
+        continue-list = <DK_UNDS_ _DK_BSPC_>;
     };
 
     conditional_layers {
@@ -91,7 +106,7 @@
                 // ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
                     DK_CTRL_   DK_ALT__   DK_SHIFT   DK_GUI__   ALFRED__       NONE____   DK_LEFT_   DK_DOWN_   DK_RIGHT   NONE____
                 // ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-                    UNDO____   CUT_____   COPY____   PASTE___   SCRNSHOT       NONE____   CAPSWORD   NONE____   NONE____   NONE____
+                    UNDO____   CUT_____   COPY____   PASTE___   SCRNSHOT       NONE____   CAPSWORD   SCRM_SNK   NONE____   NONE____
                 // ╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                                     ________   ________       ________   ________
                 //                                  ╰──────────┴──────────╯   ╰──────────┴──────────╯
