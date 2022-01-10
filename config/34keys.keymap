@@ -10,7 +10,7 @@
 };
 
 &caps_word {
-    continue-list = <_DK_BSPC_>;
+    continue-list = <_DK_BSPC_ _DK_UNDS_>;
 };
 
 &kscan0 {
@@ -33,28 +33,35 @@
 
     behaviors {
 
-        ssc: caps_word_screaming_snake_case {
+//        ssc: caps_word_screaming_snake_case {
+//            compatible = "zmk,behavior-caps-word";
+//            label = "CAPS_WORD_SCREAMING_SNAKE_CASE";
+//            #binding-cells = <0>;
+//            continue-list = <_DK_UNDS_ _DK_BSPC_>;
+//        };
+//
+//        mmsu: mod_morph_space_underscore {
+//            compatible = "zmk,behavior-mod-morph";
+//            label = "MM_SPACE_UNDERSCORE";
+//            #binding-cells = <0>;
+//            bindings = <&tk _NAV _DK_SPACE>, <DK_UNDS_>;
+//            mods = <(MOD_LSFT|MOD_RSFT)>;
+//        };
+//
+//        oss: sticky_key_quick_release {
+//            compatible = "zmk,behavior-sticky-key";
+//            label = "STICKY_KEY_QUICK_RELEASE";
+//            #binding-cells = <1>;
+//            bindings = <&kp>;
+//            release-after-ms = <STICKY_TIMEOUT>;
+//            quick-release;
+//        };
+
+        oss: one_shot_shift {
             compatible = "zmk,behavior-caps-word";
-            label = "CAPS_WORD_SCREAMING_SNAKE_CASE";
+            label = "ONE_SHOT_SHIFT";
             #binding-cells = <0>;
-            continue-list = <_DK_UNDS_ _DK_BSPC_>;
-        };
-
-        oss: sticky_key_quick_release {
-            compatible = "zmk,behavior-sticky-key";
-            label = "STICKY_KEY_QUICK_RELEASE";
-            #binding-cells = <1>;
-            bindings = <&kp>;
-            release-after-ms = <STICKY_TIMEOUT>;
-            quick-release;
-        };
-
-        mmsu: mod_morph_space_underscore {
-            compatible = "zmk,behavior-mod-morph";
-            label = "MM_SPACE_UNDERSCORE";
-            #binding-cells = <0>;
-            bindings = <&tk _NAV _DK_SPACE>, <DK_UNDS_>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
+            continue-list = <>;
         };
 
         hm: homerow_mods {
@@ -106,7 +113,7 @@
                 // ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
                     DK_CTRL_   DK_ALT__   DK_SHIFT   DK_GUI__   ALFRED__       NONE____   DK_LEFT_   DK_DOWN_   DK_RIGHT   NONE____
                 // ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-                    UNDO____   CUT_____   COPY____   PASTE___   SCRNSHOT       NONE____   CAPSWORD   SCRM_SNK   NONE____   NONE____
+                    UNDO____   CUT_____   COPY____   PASTE___   SCRNSHOT       NONE____   CAPSWORD   NONE____   NONE____   NONE____
                 // ╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                                     ________   ________       ________   ________
                 //                                  ╰──────────┴──────────╯   ╰──────────┴──────────╯

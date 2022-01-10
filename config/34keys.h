@@ -160,7 +160,7 @@
 
 // Thumb keys, two on each hand, left to right
 #define SYM_TAB_ &tk        _SYM _DK_TAB__
-#define NAV_SPC_ &mmsu      // mod morphed space to underscore
+#define NAV_SPC_ &tk        _NAV _DK_SPACE
 #define NUM_BSPC &tk        _NUM _DK_BSPC_
 #define SYM_DEL_ &tk        _SYM _DK_DEL__
 // On the numpad layer, NAV_SPC_ is overridden to output zero
@@ -187,7 +187,7 @@
 
 // Capsword
 #define CAPSWORD &caps_word
-#define SCRM_SNK &ssc
+//#define SCRM_SNK &ssc
 
 // One Shot Shift
 #define SK_SHIFT &oss
