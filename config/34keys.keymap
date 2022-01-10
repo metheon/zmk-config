@@ -19,11 +19,13 @@
 
 / {
 
-    oss: one_shot_shift {
-        compatible = "zmk,behavior-caps-word";
-        label = "ONE_SHOT_SHIFT";
-        #binding-cells = <0>;
-        continue-list = <>;
+    oss: sticky_key_quick_release {
+        compatible = "zmk,behavior-sticky-key";
+        label = "STICKY_KEY_QUICK_RELEASE";
+        #binding-cells = <1>;
+        bindings = <&kp>;
+        release-after-ms = <STICKY_TIMEOUT>;
+        quick-release;
     };
 
     conditional_layers {
