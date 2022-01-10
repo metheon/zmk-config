@@ -231,3 +231,5 @@
 #define OUT_TOG_ &out       OUT_TOG
 
 #define SK_SHIFT &sk        _DK_SHIFT
+
+#define STICKY_TIMEOUT 2000

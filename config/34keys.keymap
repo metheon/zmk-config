@@ -6,7 +6,7 @@
 #include "34keys.h"
 
 &sk {
-    release-after-ms = <100>;
+    release-after-ms = <STICKY_TIMEOUT>;
 };
 
 &caps_word {
