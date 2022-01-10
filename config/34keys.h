@@ -190,7 +190,7 @@
 //#define SCRM_SNK &ssc
 
 // One Shot Shift
-#define SK_SHIFT &oss
+#define SK_SHIFT &sk        _DK_SHIFT
 
 // clipboard
 #define UNDO____ &kp        _UNDO
